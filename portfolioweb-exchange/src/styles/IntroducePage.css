@@ -1,0 +1,91 @@
+.contentFrame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.firstFrame {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid black;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondFrame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.overviewFrame {
+    width: 100%;
+}
+
+.overviewTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 180%;
+}
+
+.overviewFirstContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 3%;
+}
+
+.overviewKoreanContent {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 6%;
+    font-size: 150%;
+}
+
+.overviewKorean {
+    height: 100%;
+}
+
+.overviewImageFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.overviewImage {
+    width: 100%;
+}
+
+.infoFrame {
+    width: 100%;
+    height: 100%;
+}
+
+.infoTitleFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 180%;
+}
+
+.infoContentFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.infoContent {
+    width: 90%;
+    font-size: 150%;
+}
