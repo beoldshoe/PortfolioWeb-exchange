@@ -3,7 +3,13 @@ import '../styles/IntroducePage.css'
 
 const IntroducePage = () => {
     return (
-        <div className="all">
+        <div className="all"
+            style={{
+                backgroundImage: `url(${process.env.PUBLIC_URL}/images/background.png)`,
+                backgroundRepeat: 'repeat',
+                backgroundSize: 'cover',
+                fontFamily: 'Chosun'
+            }}>
             <div>
                 <TopNavBar />
             </div>
@@ -22,7 +28,11 @@ const IntroducePage = () => {
                             </div>
                         </div>
                         <div className="overviewSecondContent">
-                            <div className="overviewEnglishContent"></div>
+                            <div className="overviewEnglishContent">
+                                <p className="overviewEnglish">
+                                    I am a computer undergraduate student with experience in React FE project development, Flutter mobile application development experience, and NodeJS BE project development experience.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -39,11 +49,28 @@ const IntroducePage = () => {
                                 전화번호 Phone Number. 010-2827-7940</p>
                         </div>
                     </div>
-                    <div className="awardsFrame"></div>
+                    <div className="awardsFrame">
+                        <div className="awardsTitleFrame">
+                            <p>Awards</p>
+                        </div>
+                        <div className="awardsContentFrame">
+                            <p className="awardsContent">
+                                2023 대경권 산학협력프로젝트 경진대회 우수상<br />
+                                2023 Daegyeong Industry-Academic Cooperation Project Competition excellence prize<br />
+                                2023 대구를 빛내는 해커톤 최우수상<br />
+                                2023 Hackathon Shines Daegu the grand prize<br />
+                                2024 대구를 빛내는 해커톤 최우수상<br />
+                                2024 Hackathon Shines Daegu the grand prize
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <div className="bottomNavBarFrame">
+                <p className="bottomNavBar">소개면<br />The IntroducePage</p>
+            </div>
         </div>
-
     )
 }
 
