@@ -1,7 +1,11 @@
 import TopNavBar from "../components/TopNavBar";
 import '../styles/IntroducePage.css'
+import { useNavigate } from "react-router-dom";
 
 const IntroducePage = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="all"
             style={{
@@ -46,7 +50,17 @@ const IntroducePage = () => {
 
                                 이메일 Email. howeve18@gmail.com<br /><br />
 
-                                전화번호 Phone Number. 010-2827-7940</p>
+                                전화번호 Phone Number. 010-2827-7940
+                                <div className="githubLink">
+                                    <br />
+                                    Github Link
+                                </div>
+                                <div className="AnotherLink">
+                                    <br />
+                                    Blog Link
+                                </div>
+                            </p>
+
                         </div>
                     </div>
                     <div className="awardsFrame">
@@ -68,7 +82,13 @@ const IntroducePage = () => {
                 </div>
             </div>
             <div className="bottomNavBarFrame">
-                <p className="bottomNavBar">소개면<br />The IntroducePage</p>
+                <p
+                    className="bottomNavBar"
+                    onClick={() => navigate("/Project")}
+                    style={{ cursor: "pointer" }} // 클릭 가능 표시
+                >
+                    소개면<br />The Introduce Page
+                </p>
             </div>
         </div>
     )

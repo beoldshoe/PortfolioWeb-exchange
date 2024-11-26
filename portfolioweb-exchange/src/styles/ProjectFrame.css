@@ -1,0 +1,36 @@
+.all {
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.koreanTitle {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 180%;
+}
+
+.englishTitle {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 120%;
+}
+
+.fitLeft {
+    padding: 2%;
+    width: 90%;
+    font-size: 150%;
+}
+
+.detailButton {
+    color: black;
+    cursor: pointer;
+    transition: .10s;
+}
+
+.detailButton:hover {
+    color: black;
+    text-decoration: underline;
+}

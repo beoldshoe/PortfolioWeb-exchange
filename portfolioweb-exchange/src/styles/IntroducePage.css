@@ -18,8 +18,8 @@
     flex-direction: column;
     border-right: 2px solid black;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .secondFrame {
@@ -31,6 +31,7 @@
 }
 
 .overviewFrame {
+    justify-content: flex-start;
     width: 100%;
 }
 
@@ -148,6 +149,7 @@
     color: black;
     width: 100%;
     transition: .10s;
+    cursor: pointer;
 }
 
 .bottomNavBar:hover {
@@ -165,4 +167,23 @@
     align-items: center;
     text-align: center;
     width: 100%;
+}
+
+.githubLink {
+    color: black;
+    transition: .10s;
+    cursor: pointer;
+}
+
+.githubLink:hover {
+    color: white;
+}
+
+.AnotherLink {
+    color: black;
+    cursor: pointer;
+}
+
+.AnotherLink:hover {
+    color: white;
 }
