@@ -8,7 +8,14 @@
 
 .topnavbar {
     display: flex;
-    font-size: 400%;
+    font-size: 300%;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.topnavbar:hover {
+    color: white;
+    transform: translateY(-12%);
 }
 
 .phaseFrame {
@@ -24,9 +31,74 @@
 .firstPhase {
     text-align: left;
     padding-left: 3%;
+    font-size: 120%;
 }
 
 .secondPhase {
     text-align: right;
     padding-right: 3%;
+    font-size: 120%;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+
+.modal {
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1100;
+    text-align: left;
+    animation: drop 0.5s ease forwards;
+}
+
+@keyframes drop {
+    0% {
+        top: -50%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 30%;
+        opacity: 1;
+    }
+}
+
+.modal h2 {
+    margin-bottom: 10px;
+}
+
+.modal p {
+    margin-bottom: 20px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: gray;
+}
+
+.modalTitle {
+    font-size: 180%;
 }

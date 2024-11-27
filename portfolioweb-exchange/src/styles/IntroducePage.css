@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 180%;
+    font-size: 150%;
 }
 
 .overviewFirstContent {
@@ -56,7 +56,7 @@
     width: 100%;
     margin-left: 4%;
     margin-right: 6%;
-    font-size: 150%;
+    font-size: 120%;
 }
 
 .overviewKorean {
@@ -64,7 +64,7 @@
 }
 
 .overviewEnglish {
-    font-size: 150%;
+    font-size: 120%;
 }
 
 .overviewImageFrame {
@@ -94,7 +94,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 180%;
+    font-size: 150%;
 }
 
 .infoContentFrame {
@@ -106,13 +106,13 @@
 
 .infoContent {
     width: 90%;
-    font-size: 150%;
+    font-size: 120%;
 }
 
 .awardsFrame {
     width: 100%;
     justify-content: flex-start;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .awardsTitleFrame {
@@ -120,7 +120,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 180%;
+    font-size: 150%;
 }
 
 .awardsContentFrame {
@@ -132,7 +132,7 @@
 
 .awardsContent {
     width: 90%;
-    font-size: 150%;
+    font-size: 120%;
 }
 
 .bottomNavBarFrame {
@@ -143,8 +143,8 @@
     text-align: center;
 }
 
-.bottomNavBar {
-    font-size: 120%;
+.bottomNavBar1 {
+    font-size: 150%;
     position: relative;
     color: black;
     width: 100%;
@@ -152,11 +152,11 @@
     cursor: pointer;
 }
 
-.bottomNavBar:hover {
+.bottomNavBar1:hover {
     color: transparent;
 }
 
-.bottomNavBar:hover::before {
+.bottomNavBar1:hover::before {
     content: "프로젝트면으로 이동\AGoing to The Project Page";
     position: absolute;
     color: white;
@@ -177,13 +177,16 @@
 
 .githubLink:hover {
     color: white;
+    transform: translateX(3%);
 }
 
 .AnotherLink {
     color: black;
+    transition: .10s;
     cursor: pointer;
 }
 
 .AnotherLink:hover {
     color: white;
+    transform: translateX(3%);
 }

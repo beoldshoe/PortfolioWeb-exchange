@@ -28,7 +28,7 @@ const IntroducePage = () => {
                                 <img src="/images/HyunsooKIM.jpeg" alt="Hyunsoo KIM" className="overviewImage" />
                             </div>
                             <div className="overviewKoreanContent">
-                                <p className="overviewKorean">컴퓨터학부를 재학 중이며, React FE 프로젝트 개발 경험, Flutter 모바일 어플리케이션 개발 경험 및 NodeJS BE 프로젝트 개발 경험을 보유하고 있는 학부생입니다.</p>
+                                <p className="overviewKorean">컴퓨터학부를 재학 중이며, React FE 프로젝트 개발 경험, Flutter 모바일 어플리케이션 개발 경험 및 NodeJS BE 프로젝트 개발 경험을 보유하고 있는 학부생입니다.<br /><br /> I am a computer undergraduate student with experience in React FE project development, Flutter mobile application development experience, and NodeJS BE project development experience.</p>
                             </div>
                         </div>
                         <div className="overviewSecondContent">
@@ -53,11 +53,25 @@ const IntroducePage = () => {
                                 전화번호 Phone Number. 010-2827-7940
                                 <div className="githubLink">
                                     <br />
-                                    Github Link
+                                    <a
+                                        href="https://github.com/beoldshoe"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: 'none', color: 'inherit' }} // 필요하면 스타일 추가
+                                    >
+                                        Github Link
+                                    </a>
                                 </div>
                                 <div className="AnotherLink">
                                     <br />
-                                    Blog Link
+                                    <a
+                                        href="https://velog.io/@beoldshoe/posts"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: 'none', color: 'inherit' }} // 필요하면 스타일 추가
+                                    >
+                                        Blog Link
+                                    </a>
                                 </div>
                             </p>
 
