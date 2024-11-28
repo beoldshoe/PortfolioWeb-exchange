@@ -9,6 +9,8 @@
     align-items: center;
     text-align: center;
     font-size: 150%;
+    color: white;
+    font-weight: bold;
 }
 
 .englishTitle {
@@ -16,6 +18,7 @@
     align-items: center;
     text-align: center;
     font-size: 130%;
+    color: rgb(75, 75, 75);
 }
 
 .fitLeft {
@@ -24,10 +27,25 @@
     font-size: 120%;
 }
 
+.contentFrame {
+    display: flex;
+    flex-direction: row;
+}
+
+.koreanContent {
+    padding: 3%;
+}
+
+.englishContent {
+    padding: 3%;
+}
+
+
 .detailButton {
     color: black;
     cursor: pointer;
     transition: .10s;
+    padding: 3%;
 }
 
 .detailButton:hover {

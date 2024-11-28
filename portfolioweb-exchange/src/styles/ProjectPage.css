@@ -1,4 +1,4 @@
-.bottomNavBarFrame {
+.bottomNavBar1Frame {
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.bottomNavBar {
+.bottomNavBar1 {
     font-size: 120%;
     position: relative;
     color: black;
@@ -15,11 +15,11 @@
     cursor: pointer;
 }
 
-.bottomNavBar:hover {
+.bottomNavBar1:hover {
     color: transparent;
 }
 
-.bottomNavBar:hover::before {
+.bottomNavBar1:hover::before {
     content: "소개면으로 이동\AGoing to The Introduce Page";
     position: absolute;
     color: white;

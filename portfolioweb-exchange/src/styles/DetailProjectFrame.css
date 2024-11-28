@@ -1,0 +1,159 @@
+.koreanTitleFrame1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.koreanTitle1 {
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    font-size: 180%;
+    color: white;
+    font-weight: bold;
+}
+
+.enlgishTitle1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 130%;
+    color: rgb(75, 75, 75);
+}
+
+.dataAndtype1 {
+    font-size: 120%;
+}
+
+.koreanContent1 {
+    font-size: 130%;
+}
+
+.englishContent1 {
+    font-size: 130%;
+}
+
+.rowFrame1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowFrame1>div {
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.contentFrame1 {
+    padding: 10%;
+    border-right: 2px solid black
+}
+
+.dataAndtype1 {
+    padding: 5%;
+}
+
+.koreanContent1 {
+    padding: 5%;
+}
+
+.englishContent1 {
+    padding: 5%;
+}
+
+.nextFrame1 {
+    padding: 10%;
+}
+
+.frameworkFrame1 {
+    font-size: 120%;
+    padding: 5%;
+}
+
+.githubLink1 {
+    color: black;
+    padding: 5%;
+    transition: .10s;
+    font-size: 120%;
+}
+
+.githubLink1:hover {
+    color: white;
+    transform: translateX(3%);
+}
+
+.blogLink1 {
+    color: black;
+    padding: 5%;
+    transition: .10s;
+    font-size: 120%;
+}
+
+.blogLink1:hover {
+    color: white;
+    transform: translateX(3%);
+}
+
+.imageFrame1.slider {
+    padding: 5%
+}
+
+.imageFrame12 {
+    padding: 5%;
+    margin-left: 1%;
+}
+
+.slider {
+    padding: 3%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    cursor: grab;
+    gap: 10px;
+    padding: 10px 0;
+    background: black;
+    border-radius: 3%;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.slider-image {
+    max-width: 90%;
+    height: 90%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.bottom {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    font-size: 120%;
+    position: relative;
+    color: black;
+    width: 100%;
+    transition: .10s;
+    cursor: pointer;
+}
+
+.bottom:hover {
+    color: transparent;
+}
+
+.bottom:hover::before {
+    content: "프로젝트면으로 이동\AGoing to The Project Page";
+    position: absolute;
+    color: white;
+    white-space: pre-wrap;
+    padding: 3%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
