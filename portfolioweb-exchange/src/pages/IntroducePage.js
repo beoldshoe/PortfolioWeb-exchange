@@ -43,7 +43,7 @@ const IntroducePage = () => {
                 <div className="secondFrame">
                     <div className="infoFrame">
                         <div className="infoTitleFrame">
-                            <p>Information</p>
+                            <p>Contacts</p>
                         </div>
                         <div className="infoContentFrame">
                             <p className="infoContent">이름 Name. 김현수 Hyunsoo KIM <br /><br />
