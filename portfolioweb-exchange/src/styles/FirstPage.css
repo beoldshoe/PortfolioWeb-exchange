@@ -1,0 +1,99 @@
+.allFrame {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.rowFrame {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.rowFrame>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.blank {
+    flex: 1;
+}
+
+.imageFrame {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.titleFrame {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 300%;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.overviewImage {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    max-height: auto;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.overviewImage:hover {
+    animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navItem {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 200%;
+    transition: .10s;
+}
+
+.navItem:last-child {
+    border-bottom: none;
+}
+
+.navText {
+    color: black;
+    transition: color 0.12s, transform 0.20s;
+    cursor: pointer;
+}
+
+.navText:hover {
+    color: white;
+    font-weight: bold;
+    transform: translateY(-10px);
+}

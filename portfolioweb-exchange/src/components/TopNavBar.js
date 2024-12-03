@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import '../styles/TopNavBar.css'
+import { useLocation } from "react-router-dom";
+import '../styles/TopNavBar.css';
 
 const TopNavBar = () => {
-
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const location = useLocation();
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -11,6 +12,24 @@ const TopNavBar = () => {
 
     const closeModal = () => {
         setIsModalOpen(false);
+    };
+
+    const renderFirstPhaseText = () => {
+        const path = location.pathname;
+        if (path === "/Introduce") {
+            return (
+                <>
+                    소개면<br />The Introduce Page
+                </>
+            );
+        } else if (path.startsWith("/Project")) {
+            return (
+                <>
+                    프로젝트면<br />The Project Page
+                </>
+            );
+        }
+        return null;
     };
 
     return (
@@ -33,14 +52,14 @@ const TopNavBar = () => {
             )}
             <div className="phaseFrame">
                 <div className="firstPhase">
-                    소개면<br />The Introduce Page
+                    {renderFirstPhaseText()}
                 </div>
                 <div className='secondPhase'>
                     김현수<br />Hyunsoo KIM
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default TopNavBar;

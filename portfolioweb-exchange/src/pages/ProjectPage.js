@@ -24,8 +24,8 @@ const ProjectPage = () => {
             <div className="bottomNavBar1Frame">
                 <p
                     className="bottomNavBar1"
-                    onClick={() => navigate("/")}
-                    style={{ cursor: "pointer" }} // 클릭 가능 표시
+                    onClick={() => navigate("/Introduce")}
+                    style={{ cursor: "pointer" }}
                 >
                     프로젝트면<br />The Project Page
                 </p>
