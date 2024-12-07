@@ -157,3 +157,53 @@
     text-align: center;
     width: 90%;
 }
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: rgb(190, 189, 189);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.modalImage {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.imageDetail {
+    padding: 5%;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 150%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgray;
+}

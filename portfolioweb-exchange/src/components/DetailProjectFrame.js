@@ -17,7 +17,13 @@ const DetailProjectFrame = () => {
             isGithub: 1,
             GithubLink: "https://github.com/noFlowWater/signage_solution",
             BlogLink: "https://velog.io/@beoldshoe/Project-LG-WebOS",
-            images: ["/images/kiosk1.png", "/images/kiosk2.png", "/images/kiosk3.png", "/images/kiosk4.png", "/images/kiosk5.png"]
+            images: ["/images/kiosk1.png", "/images/kiosk2.png", "/images/kiosk3.png", "/images/kiosk4.png", "/images/kiosk5.png"],
+            imageDetail: ["Admin Login - 초기에 설정해둔 비밀번호 또는 관리자가 임의로 변경한 비밀번호로 관리자 모드로 접속할 수 있게 됩니다. 데이터베이스에 저장된 비밀번호가 입력한 비밀번호와 같다면 접속이 가능하게 만들었습니다. 키오스크라는 특성 때문에 URL로 접속할 경우는 존재하지 않다고 판단하여 토큰을 저장해서 다음 페이지로 넘어가는 등의 로직은 구현하지 않았습니다. / You can access the password initially set or the password arbitrarily changed by the administrator in administrator mode. If the password stored in the database is the same as the password entered, access was made possible. Due to the nature of the kiosk, we decided that access by URL did not exist, so we did not implement logic such as saving tokens and moving to the next page.",
+                "View menus by category(delete button is existed) - 등록한 메뉴들을 카테고리별로 조회해서 확인할 수 있습니다. 각 카테고리별로 API를 불러서 카테고리별로 조회할 수 있도록 로직을 구현했습니다. 그리고 각 메뉴별로 삭제 버튼을 만들어 필요없는 메뉴는 삭제가 가능하도록 했습니다. / You can check the registered menus by category. We implemented logic so that you can inquire by category by calling API for each category. And by creating a delete button for each menu, menus that are not needed can be deleted.",
+                "Detailed Menu Inquiry - 선택한 메뉴의 가격, 이름, 이미지 등의 정보를 조회하고 확인 할 수 있습니다. / You can inquire and check information such as price, name, and image of the selected menu.",
+                "Register menu - 등록하고 싶은 메뉴의 정보를 기입해 등록할 수 있습니다. / You can register by filling out the information on the menu you want to register.",
+                "Change password - 비밀번호를 변경하고 싶다면 원하는 비밀번호로 변경할 수 있습니다. 비밀번호 확인 란에서 입력한 비밀번호와 일치하는지 각 usestate를 비교하여 판단할 수 있도록 했습니다. / If you want to change the password, you can change it to the password you want. We compared each usestate to determine if it matches the password entered in the password check box."
+            ]
         },
         {
             id: 1,
@@ -30,7 +36,13 @@ const DetailProjectFrame = () => {
             isGithub: 1,
             GithubLink: "https://github.com/ohyatt/knu_mingle",
             BlogLink: "",
-            images: ["/images/mingle1.png", "/images/mingle2.png", "/images/mingle3.png", "/images/mingle4.png", "/images/mingle5.png"]
+            images: ["/images/mingle1.png", "/images/mingle2.png", "/images/mingle3.png", "/images/mingle4.png", "/images/mingle5.png"],
+            imageDetail: ["User register - email 중복 확인 등 email 인증 등의 기능을 API를 통해 로직을 구현하고 여러가지 정보들을 기입한 후 사용자를 등록할 수 있습니다. / Functions such as email authentication such as email duplication verification can be implemented through API, and users can register after filling out various information.",
+                "Review check - 작성한 리뷰를 카드로 확인할 수 있습니다. 설명란에 일정 라인 수가 넘어가면 ‘…’으로 처리되고 해당 카드를 눌렀을 때 modal로 전체 내용을 확인할 수 있습니다. image가 있다면 슬라이드 형태로 넘기면서 확인할 수 있도록 하여 사용자 입장에서 보기 편하게 했습니다. 또한 카테고리별 조회가 가능하고 제목을 검색해서 조회가 가능하도록 했습니다. 그리고  별점순, 날짜 순으로 정렬이 가능하게 만들었습니다./ You can check the reviews you've written with your card. If there are more than a certain number of lines in the comment box, '...It is processed as ' and when you press the card, you can check the entire contents with modal. If there is an image, it can be viewed in the form of a slide, making it easier for users to see it. In addition, it is possible to look up by category and search for titles. And we made it possible to sort it in order of stars and dates.",
+                "Market check - 작성된 마켓의 게시물을 게시판 형태로 확인할 수 있습니다. 게시판 형태에서 예약 여부(status)를 확인할 수 있고 국적도 확인할 수 있습니다. 제목 검색으로 조회를 할 수 있고 게시물 등록한 사용자의 국적으로 조회할 수 있습니다. / You can check the posts on the created market in the form of a bulletin board. You can check the status of the reservation in the form of the bulletin board and also check the nationality. You can look up by searching for the title and by the nationality of the user who registered the post.",
+                "Market detail check - 작성된 마켓의 게시물을 상세하게 확인할 수 있습니다. 작성자는 예약 상태를 설정할 수 있습니다. 그리고 게시물에 댓글을 작성할 수 있습니다. / You can check the posts in the created market in detail. Authors can set the status of the reservation. And they can write comments on the posts.",
+                "Map - 외국인들이 이용할 수 있는 편의 시설의 마커가 찍혀있는 지도입니다. / It is a map with markers of convenience facilities available to foreigners."
+            ]
         },
         {
             id: 2,
@@ -43,7 +55,8 @@ const DetailProjectFrame = () => {
             isGithub: 0,
             GithubLink: "회사 내 private repository라서 공개가 불가합니다. It is a private repository within the company, so it cannot be disclosed.",
             BlogLink: "",
-            images: ["/images/NoImage.png"]
+            images: ["/images/NoImage.png"],
+            imageDetail: []
         },
     ]);
 
@@ -52,6 +65,9 @@ const DetailProjectFrame = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
+
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null); // 현재 선택된 이미지 인덱스
+    const [isModalOpen, setIsModalOpen] = useState(false); // 모달 열림 여부
 
     const handleMouseDown = (e) => {
         setIsDragging(true);
@@ -69,6 +85,16 @@ const DetailProjectFrame = () => {
 
     const handleMouseUpOrLeave = () => {
         setIsDragging(false);
+    };
+
+    const openModal = (index) => {
+        setSelectedImageIndex(index);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImageIndex(null);
+        setIsModalOpen(false);
     };
 
     return (
@@ -114,6 +140,7 @@ const DetailProjectFrame = () => {
                                         src={image}
                                         alt={`Slide ${index + 1}`}
                                         className="slider-image"
+                                        onClick={() => openModal(index)}
                                     />
                                 ))
                             ) : (
@@ -123,7 +150,20 @@ const DetailProjectFrame = () => {
                     </div>
                 </div>
             </div>
-            <div className="bottom" onClick={() => navigate(-1)}>
+            {isModalOpen && (
+                <div className="modalOverlay" onClick={closeModal}>
+                    <div className="modalContent" onClick={(e) => e.stopPropagation()}>
+                        <img
+                            src={project.images[selectedImageIndex]}
+                            alt={`Modal Slide ${selectedImageIndex + 1}`}
+                            className="modalImage"
+                        />
+                        <p className="imageDetail">{project.imageDetail[selectedImageIndex]}</p>
+                        <button onClick={closeModal}>닫기 Close</button>
+                    </div>
+                </div>
+            )}
+            <div className="bottom" onClick={() => navigate("/Project")}>
                 {project.koreanTitle}<br />{project.englishTitle}
             </div>
         </div>
